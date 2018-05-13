@@ -1,0 +1,114 @@
+.content-wrapper
+{
+	display: -webkit-box;
+	-webkit-box-pack:start;
+	-webkit-box-align:center;
+	-webkit-box-orient:vertical;
+}
+.content
+{
+	display: -webkit-box;
+	-webkit-box-pack:start;
+	-webkit-box-align:center;
+	-webkit-box-orient:vertical;
+}
+.users-wrapper
+{
+	display: -webkit-box;
+	-webkit-box-pack:start;
+	-webkit-box-align:center;
+	-webkit-box-orient:vertical;
+	width: 100%;
+	color: white;
+	background-color: black;
+	border-radius: 25px;
+}
+.users-content
+{
+	display: -webkit-box;
+	-webkit-box-pack:start;
+	-webkit-box-align:center;
+	-webkit-box-orient:vertical;
+	width: 98%;
+	padding: 1%;
+}
+#admin-panel
+{
+	font-size: 15px;
+	color: white;
+}
+.user-row
+{
+	display: -webkit-box;
+	-webkit-box-align:center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack:start;
+	height: 265px;
+	width: 100%;
+	border-bottom: 1px solid white;
+}
+.user-avatar, .user-avatar img
+{
+	display: -webkit-box;
+	-webkit-box-align:center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack:center;
+	width: 250px;
+	height: 250px;
+}
+.user-info-wrapper
+{
+	display: -webkit-box;
+	-webkit-box-orient:horizontal;
+	-webkit-box-align:center;
+	-webkit-box-pack:start;
+	height: 265px;
+	width: calc(100% - 250px);
+	font-size: 20px;
+	color: white;
+}
+.user-info-right
+{
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-box-align:start;
+	-webkit-box-pack:center;
+	width: 350px;
+	height: 230px;
+	padding: 10px;
+}
+.user-info-left
+{
+	display: -webkit-box;
+	-webkit-box-orient:horizontal;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	width: calc(100% - 370px);
+	height: 100%;
+}
+table
+{
+	border-collapse:separate;
+ 	border-spacing:10px 10px;
+}
+.user-info-role, .user-info-delete
+{
+	display: -webkit-box;
+	-webkit-box-orient:horizontal;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	width: 50%;
+}
+.user-info-role >img 
+{
+	width: 200px;
+	height: 100%;
+}
+.user-info-delete > button
+{
+	padding: 10px;
+}
+#loginEmailError, #loginPasswordError
+{
+	font-size: 15px;
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale=1>
+	<meta name="description" content="Neki sajt">
+	<meta name="keywords" contet="web design, web programing">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/video.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!-- CSS with classes for adding/removing-->
+	<link rel="stylesheet" type="text/css" href="css/dynamicCSS.css">
+
+	<!-- Jquery-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jq.js"></script>
+	<script type="text/javascript" src="js/video.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/logout.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+	
+	<title>Video Page</title>
+</head>
+<body>
+	<!-- Wrapper -->
+	<div class="wrapper">
+		<!-- Header -->
+		<header>
+			<div class="header-wrapper">
+				<div class="header-left"> 
+					<div id="header-left-img-hover">
+						<img class="animated infinte swing" src="img/miki.png" alt="logo_picture">
+					</div>
+					<h1> <span class="red"> Website</span> name</h1>
+				</div>
+
+				<div class="header-center">
+					<form></form>
+					<input type="text" name="search" placeholder="Search for video...">
+					<button type="text"> <i class="fa fa-search"></i></button>
+				</div>
+				<div class="header-right"> 
+					<div id="login-signup-div">
+						<div> <img src="img/login.png" id="loginbutton" title="Login"> </div>
+						<div> <img src="img/signup.png" id="signupbutton" title="Signup"> </div>
+					</div>
+
+					<div id="profile-info">
+						<img src="avatar/avatar2.png" width="50px" height="50px">
+						<p id="profile-info-fullname">  </p>
+						<div id="img-logout"> <img src="img/logout.png" alt="logout.png" title="Log out"> </div>
+					</div>
+
+				</div>
+
+			</div>
+		</header>
+		<!-- Main content-->
+		<div class="content-wrapper">
+			<div class="content" >
+				<!-- Navigation Bar -->
+				<nav>
+					<ul>
+						<li> <a href="index.html" class="red"> Home </a> </li>
+						<li> <a href="#"> About </a> </li>
+						<li> <a href="#"> Contact </a> </li>
+						<!-- <li> <a href="users.html" id="users"> Users</a> </li> -->
+					</ul>
+				</nav>
+
+				<div class="video-container">
+					<!-- Video Info-->
+					<p id="videoName">Video name</p>
+					<div class="video-content">
+						<!-- VIDEO-->
+						
+						<video id="video" src="video/video1.mp4" preload></video>
+						<div class="video-controlers-div">
+							<button class="video-controlers" id="video-play"> <img src="img/playbutton.png"> </button>
+							<button class="video-controlers" id="video-stop"> <img src="img/stopbutton.png"> </button>
+						</div>
+					
+						<!-- Embeded VIDEO-->
+<!--						<iframe src="https://www.youtube.com/embed/k3dJKtQmyd0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						-->
+					</div>
+					<div class="videoInfo">
+						<div class="videoInfoTop">
+							<div class="videoInfoTopLeft">
+								<p id="videoviews">Video views</p>
+							</div>
+							<div class="videoInfoTopRight">
+								<p id="videolike">Video like</p> <span> <a href="#likevideo"> <img  src="img/like.png"> </a> </span>
+								<p id="videodislike">Video dislike</p> <span> <a href="#dislikevideo"> <img src="img/dislike.png"> </a> </span>
+							</div>
+						</div>
+						<div class="videoInfoBottom">
+							<img class="avatar" src="img/avatar.png" alt="avatar.png">	
+
+							<div class="videoInfoBottom-right">
+								<div class="videoInfoBottom-right-top">
+									<div class="videoInfoBottom-right-top-left">
+										<p id="videopublisher"> <a href="#user.html" class="red"> Marko Francuski </a></p>	
+									</div>
+									<div class="videoInfoBottom-right-top-right">
+										<p id="videodatecreated">  Date created <span class="red" style="padding-left: 10px;"> 27.12.2015 </span> </p>
+									</div>
+								</div>
+								<div class="videoInfoBottom-right-bottom">
+									<p id="videodescription"> This is a video description</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- Comment Section-->
+					<p id="paragraphComment"> Comment section </p>
+					<div id="sort-comments">
+						<div class="sort-comments-div">
+							<p>Sort By Like</p>
+							<button id="sort-comment-like-Ascending">&uarr;</button>
+							<button id="sort-comment-like-Descending">&darr;</button>
+						</div>
+						<div class="sort-comments-div">
+							<p>Sort By Dislike</p>
+							<button id="sort-comment-dislike-Ascending">&uarr;</button>
+							<button id="sort-comment-dislike-Descending">&darr;</button>
+						</div>
+						<div class="sort-comments-div">
+							<p>Sort By Date</p>
+							<button id="sort-comment-date-Ascending">&uarr;</button>
+							<button id="sort-comment-date-Descending">&darr;</button>
+						</div>
+
+					</div>
+					<section id="comment-section">
+<!--						<div class="comment">
+							<img class="avatar" src="img/avatar.png" alt="avatar.png">
+							<div class="comment-info">
+								<p> <a href="#user.html" class="red"> Radovan Silaski </a> </p>
+								<p class="commentContent">
+									Lorem ipsum dolor sit amet, nemore torquatos cu has. Doctus delenit vix et. Cu pro augue elitr complectitur, vix falli scripserit ne. Vis laudem deseruisse ut. Te sit primis menandri, quo tale forensibus no.Lorem ipsum dolor sit amet, nemore torquatos cu has. Doctus delenit vix et. Cu pro augue elitr complectitur, vix falli scripserit ne. Vis laudem deseruisse ut. Te sit primis menandri, quo tale forensibus no.
+								</p>
+								<div class="comment-rating">
+									<div class="comment-rating-container">
+										<img src="img/like.png" width="15px" height="15px"> 
+										<p id="comment-like"> 1000 </p>
+									</div>
+									<div class="comment-rating-container">
+										<img src="img/dislike.png" width="15px" height="15px"> 
+										<p id="comment-dislike"> 156</p>
+									</div>
+									<div class="comment-rating-date">
+										<p id="date-created">27.01.2015</p>
+									</div>
+									
+								</div>
+							</div>
+							
+						</div>
+						<div class="comment">
+							<img class="avatar" src="img/avatar.png" alt="avatar.png">
+							<div class="comment-info">
+								<p> <a href="#user.html" class="red"> Marko Francuski </a> </p>
+								<p class="commentContent">Lorem ipsum dolor sit amet, nemore torquatos cu has. Doctus delenit vix et. Cu pro augue elitr complectitur, vix falli scripserit ne. Vis laudem deseruisse ut. Te sit primis menandri, quo tale forensibus no.</p>
+							</div>
+						</div>
+-->
+					</section>
+
+					<!-- Leave comment-->
+					<section id="addcommentsection">
+						<img class="avatar" src="img/avatar.png" alt="avatar.png">
+						<textarea id="commentcontent" placeholder="Leave your comment here.."></textarea>
+						<div id="submitcommentdiv">
+							<button id="addcomment"> Submit</button>
+						</div>
+						
+					</section>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- Footer -->
+	<footer>
+		<div class="footer-top">
+			<div class="footer-top-left">
+				<div class="footer-top-left-container">
+					<p>Help</p>
+					<ul>
+						<li> Something1 </li>
+						<li> something2</li>
+					</ul>
+				</div>
+				<div class="footer-top-left-container">
+					<p>About us</p>
+					<ul>
+						<li>What is our goal</li>
+						<li>About us 2</li>
+					</ul>
+				</div>
+				<div class="footer-top-left-container">
+					<p>Common questions</p>
+					<ul>
+						<li>How to play video</li>
+						<li>How to pause video</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-top-center">
+				<p>Subscribe to our Newsletter now!</p>
+				<input type="email" name="newsletteremail" placeholder="Enter your email here...">
+				<button id="newsletterbutton"> Subscribe</button>
+			</div>
+			<div class="footer-top-right">
+				<p>Follow us on social network</p>
+				<a href="#"> <img src="img/twitter.png"> </a>
+				<a href="#"> <img src="img/instagram.png"> </a>
+				<a href="#"> <img src="img/facebook.png"> </a>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p> &copy Copyright Marko Francuski SF24/2015</p>
+		</div>
+	</footer>
+	<div class="fixed-zone">
+
+		<div class="registrationWindow"" id="registrationWindow">
+			<div  class="registrationWindowContent">
+				<label> Register here</label>
+				<!-- Row 1-->
+				<div class="row">
+					<div class="row-left">
+						<label>First name</label> 
+					</div>
+					<div class="row-center">
+						<input type="text" id="regFirstName"> 
+					</div>
+					<div class="row-right">
+						
+					</div>
+						
+				</div>
+				<!-- Row 2-->
+				<div class="row">
+					<div class="row-left">
+						<label>Last name</label> 
+					</div>
+					<div class="row-center">
+						<input type="text" id="regLastName"> 
+					</div>
+					<div class="row-right">
+						
+					</div>
+				</div>
+				<!-- Row 3-->
+				<div class="row">
+					<div class="row-left">
+						<label>Email</label> 
+					</div>
+					<div class="row-center">
+						<input type="text" id="regEmail"> 
+					</div>
+					<div class="row-right">
+						<label id="regEmailMsg" class="red" style="font-size: 12px;">Email already exist </label> 
+					</div>
+				</div>
+				<!-- Row 4-->
+				<div class="row">
+					<div class="row-left">
+						<label>Password</label> 
+					</div>
+					<div class="row-center">
+						<input type="text" id="regPassword"> 
+					</div>
+					<div class="row-right">
+						
+					</div>
+													 
+				</div>
+				<!-- Row 5-->
+				<div class="row">
+					<div class="row-left" style="display: -webkit-box; -webkit-box-orient:horizontal; -webkit-box-pack: center ;">
+						<button id="regbtnCancel">Cancel</button> 
+					</div>
+					<div class="row-center" style="display: -webkit-box; -webkit-box-orient:horizontal; -webkit-box-pack: center;">
+						<button id="regbtnRegister">Register</button> 
+					</div>
+					<div class="row-right">
+						
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="loginWindow" id="loginWindow">
+			<div class="loginWindowContent">
+				<label> Login </label>
+				<div class="row">
+					<div class="row-left">
+						<label> Email</label>
+					</div>
+					<div class="row-center">
+						<input type="text" id="loginEmail">
+					</div>
+					<div class="row-right">
+						<p id="loginEmailError" class="red"> Email doesn't exists</p>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="row-left">
+						<label> Password</label>
+					</div>
+					<div class="row-center" >
+						<input type="text" id="loginPassword">
+					</div>
+					<div class="row-right">
+						<p id="loginPasswordError" class="red"> Invalid Password</p>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="row-left" style="display: -webkit-box; -webkit-box-orient:horizontal; -webkit-box-pack: center;">
+							<button id="loginbtncancel">Cancel</button>
+						</div>
+					<div class="row-center" style="display: -webkit-box; -webkit-box-orient:horizontal; -webkit-box-pack: center;">
+						<button id="loginbtn">Login</button>
+					</div>
+					<div class="row-right">
+						
+					</div>
+				</div>			
+			</div>
+		</div>	
+		
+			
+	</div>
+</body>
+</html>

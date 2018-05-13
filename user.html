@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale=1>
+	<meta name="description" content="Neki sajt">
+	<meta name="keywords" contet="web design, web programing">
+
+	<!-- CSS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/user.css">
+	<!-- CSS with classes for adding/removing-->
+	<link rel="stylesheet" type="text/css" href="css/dynamicCSS.css">
+
+
+	<!-- Font-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>User Page</title>
+
+	<!-- Jquery-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jq.js"></script>
+	<script type="text/javascript" src="js/user.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/logout.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+
+</head>
+<body>
+	<!-- Wrapper -->
+	<div class="wrapper">
+		<!-- Header -->
+		<header>
+			<div class="header-wrapper">
+				<div class="header-left"> 
+					<div id="header-left-img-hover">
+						<img class="animated infinte swing" src="img/miki.png" alt="logo_picture">
+					</div>
+					<h1> <span class="red"> Website</span> name</h1>
+				</div>
+
+				<div class="header-center">
+					<form></form>
+					<input type="text" name="search" placeholder="Search for video...">
+					<button type="text"> <i class="fa fa-search" title="Search"></i></button>
+				</div>
+
+				<div class="header-right">
+					<!-- Izbaciti formu dodati but6ton tag umesto input submit-a-->
+					<div id="login-signup-div">
+						<div> <img src="img/login.png" id="loginbutton" title="Login"> </div>
+						<div> <img src="img/signup.png" id="signupbutton" title="Signup"> </div>
+					</div>
+
+					<div id="profile-info">
+						<img src="avatar/avatar2.png" width="50px" height="50px">
+						<p id="profile-info-fullname">  </p>
+						<div id="img-logout"> <img src="img/logout.png" alt="logout.png" title="Log out"> </div>
+					</div>
+					
+<!--					<div id="dropdown">
+						<button onclick="" class="dropdown-button"> Click me </button>
+						<div id="myDropdown" class="dropdown-content">
+							<a href="#">Login</a>
+							<a href="#">Sign up</a>
+						</div>
+					</div>
+-->
+			</div>
+		</header>
+		<!-- Main content-->
+		<div class="content-wrapper">
+			<div class="content" >
+				<!-- Navigation Bar -->
+				<nav>
+					<ul>
+						<li> <a href="index.html" class="red"> Home </a> </li>
+						<li> <a href="#about.html"> About </a> </li>
+						<li> <a href="#contact.html"> Contact </a> </li>
+						<!-- <li> <a href="users.html" id="users"> Users</a> </li> -->
+
+					</ul>
+				</nav>
+
+				<div id="user-wrapper">
+
+					<div id="user-container">
+						<div id="user-container-top-user-name">
+							<div id="user-name-container">
+								<!-- <p id="user-name">Marko Francuski</p> -->
+							</div>
+							<div id="banUserbtn-container">
+								<p id="banUserbtn"> X </p>
+							</div>
+						</div>
+						<div id=user-container-bottom>
+							<div id="user-avatar-container">
+								<!-- <img src="avatar/avatar2.png" class="avatar" alt="avatar2.png"> -->
+							</div>
+							<div id="user-container-bottom-right">
+								<div id="user-container-bottom-right-info">
+									<p style="margin-bottom:5px;">Profile Information</p>
+									<table id="user-table-info">
+										<tr id="db">
+											<td> Date Of Birth</td>
+											<!-- <td id="user-dateBirth">30.01.1996</td> -->
+										</tr>
+										<tr id="email">
+											<td>email</td>
+											<!-- <td id="user-email">asd@gmail.com</td> -->
+										</tr>
+									</table>
+								</div>
+								<div id="user-info-role-div">
+									<!-- <img src="img/moderator.png"> -->
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div id="user-videos">
+					
+<!--						<article class="video-wrapper">
+							<div class="video-container">
+								<div class="videoTop">
+									<a href="video.html"> <img src="img/img.png" alt="VideoImage"> </a>
+								</div>
+								<div class="videoBottom">
+									<div class="videoBottom-videoInfo">
+										
+										<div class="videobottom-videoInfo-name">
+											<p> <strong> sta sam dobio od svetog nikole </strong> </p>
+										</div>
+										
+										<div class="videoBottom-videoInfo-rating">
+											<div class="like-container"> <span> <img src="img/like.png" style="height: 15px;"></span><p id="likes"> 1,500 </p> </div>
+											<div class="dislike-container"> <span> <img src="img/dislike.png" style="height: 15px;"> </span><p id="dislikes"> 1,000</p> </div>
+										</div>
+										<div class="videobottom-videoInfo-views">
+											<p>Views <span class="red"> 13,550</span></p>
+											<p>Date created <span class="red">01.01.2017 </span></p>
+										</div>
+									</div>
+
+									<div class="videoBottom-videoPublisher">
+										<p> Publisher <a href="#user.html" class="red"> Marko Francuski </a> </p>
+									</div>
+								</div>
+							</div>
+						</article>
+-->
+					</div>
+
+				</div>
+						
+			</div>
+		</div>
+		
+		<footer>
+			<div class="footer-top">
+				<div class="footer-top-left">
+					<div class="footer-top-left-container">
+						<p>Help</p>
+						<ul>
+							<li> Something1 </li>
+							<li> something2</li>
+						</ul>
+					</div>
+					<div class="footer-top-left-container">
+						<p>About us</p>
+						<ul>
+							<li>What is our goal</li>
+							<li>About us 2</li>
+						</ul>
+					</div>
+					<div class="footer-top-left-container">
+						<p>Common questions</p>
+						<ul>
+							<li>How to play video</li>
+							<li>How to pause video</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-top-center">
+					<p>Subscribe to our Newsletter now!</p>
+					<input type="email" name="newsletteremail" placeholder="Enter your email here...">
+					<button id="newsletterbutton"> Subscribe</button>
+				</div>
+				<div class="footer-top-right">
+					<p>Follow us on social network</p>
+					<a href="#"> <img src="img/twitter.png"> </a>
+					<a href="#"> <img src="img/instagram.png"> </a>
+					<a href="#"> <img src="img/facebook.png"> </a>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p> &copy Copyright Marko Francuski SF24/2015</p>
+			</div>
+		</footer>
+		<!-- Fixed zone for fixed element -->
+	</div>
+
+	<div class="fixed-zone">
+
+			<div class="registrationWindow"" id="registrationWindow">
+				<div  class="registrationWindowContent">
+					<label> Register here</label>
+					<!-- Row 1-->
+					<div class="row">
+						<div class="row-left">
+							<label>First name</label> 
+						</div>
+						<div class="row-center">
+							<input type="text" id="regFirstName"> 
+						</div>
+						<div class="row-right">
+							
+						</div>
+							
+					</div>
+					<!-- Row 2-->
+					<div class="row">
+						<div class="row-left">
+							<label>Last name</label> 
+						</div>
+						<div class="row-center">
+							<input type="text" id="regLastName"> 
+						</div>
+						<div class="row-right">
+							
+						</div>
+					</div>
+					<!-- Row 3-->
+					<div class="row">
+						<div class="row-left">
+							<label>Email</label> 
+						</div>
+						<div class="row-center">
+							<input type="text" id="regEmail"> 
+						</div>
+						<div class="row-right">
+							<label id="regEmailMsg" class="red" style="font-size: 12px;">Email already exist </label> 
+						</div>
+					</div>
+					<!-- Row 4-->
+					<div class="row">
+						<div class="row-left">
+							<label>Password</label> 
+						</div>
+						<div class="row-center">
+							<input type="text" id="regPassword"> 
+						</div>
+						<div class="row-right">
+							
+						</div>
+														 
+					</div>
+					<!-- Row 5-->
+					<div class="row">
+						<div class="row-left" style="display: -webkit-box; -webkit-box-orient:horizontal; -webkit-box-pack: center ;">
+							<button id="regbtnCancel">Cancel</button> 
+						</div>
+						<div class="row-center" style="display: -webkit-box; -webkit-box-orient:horizontal; -webkit-box-pack: center;">
+							<button id="regbtnRegister">Register</button> 
+						</div>
+						<div class="row-right">
+							
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="loginWindow" id="loginWindow">
+				<div class="loginWindowContent">
+					<label> Login </label>
+					<div class="row">
+						<div class="row-left">
+							<label> Email</label>
+						</div>
+						<div class="row-center">
+							<input type="text" id="loginEmail">
+						</div>
+						<div class="row-right">
+							<p id="loginEmailError" class="red"> Email doesn't exists</p>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="row-left">
+							<label> Password</label>
+						</div>
+						<div class="row-center" >
+							<input type="text" id="loginPassword">
+						</div>
+						<div class="row-right">
+							<p id="loginPasswordError" class="red"> Invalid Password</p>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="row-left" style="display: -webkit-box; -webkit-box-orient:horizontal; -webkit-box-pack: center;">
+							<button id="loginbtncancel">Cancel</button>
+						</div>
+						<div class="row-center" style="display: -webkit-box; -webkit-box-orient:horizontal; -webkit-box-pack: center;">
+							<button id="loginbtn">Login</button>
+						</div>
+						<div class="row-right">
+							
+						</div>
+					</div>			
+				</div>
+			</div>
+
+			
+	</div>
+</body>
+</html>
